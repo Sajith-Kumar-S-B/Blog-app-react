@@ -1,0 +1,18 @@
+
+
+section .main__div{
+     background: url(../../images/sea.jpg);
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+     z-index: 2;
+}
+
+section .modal__div{
+    position:absolute;
+    right: 10%;
+    top: 10%;
+    z-index: 0;
+    overflow: hidden;
+    
+}

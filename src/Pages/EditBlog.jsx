@@ -2,7 +2,7 @@ import React from 'react'
 
 function EditBlog() {
   return (
-    <div>EditBlog</div>
+    <div style={{marginTop:'100px'}}></div>
   )
 }
 

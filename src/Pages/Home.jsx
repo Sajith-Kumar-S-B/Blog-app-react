@@ -1,8 +1,14 @@
 import React from 'react'
+import HomeContent from '../components/Homecontent/HomeContent'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div style={{marginTop:'200px'}}>
+      <HomeContent/>
+
+
+
+    </div>
   )
 }
 

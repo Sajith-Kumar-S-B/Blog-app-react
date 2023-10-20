@@ -3,3 +3,15 @@
   margin: 0px;
   box-sizing: border-box;
 }
+
+.custom-no-outline{
+  outline: none;
+  border-right: 0px;
+}
+
+.element {
+  border-left: 1px solid #ddd; /* Specify the left border */
+  border-right: 1px solid #ddd; /* Specify the right border */
+}
+
+
