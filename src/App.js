@@ -3,23 +3,27 @@ import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer';
 import { Route, Routes } from 'react-router';
-import Blog from './Pages/Blog';
-import About from './Pages/About';
 import Home from './Pages/Home';
 import EditBlog from './Pages/EditBlog';
-import { ToastContainer } from 'react-bootstrap';
+import OneBlog from './components/singleblog/OneBlog';
+import Blog from './Pages/Blog/Blog';
+import AddBlog from './components/EditBlog/AddBlog';
+
 
 function App() {
   return (
     <>
-    <ToastContainer/>
+  
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/blog' element={<Blog/>}/>
-        <Route path='/edit-blog' element={<EditBlog/>}/>
+        <Route path='/oneblog/:id' element={<OneBlog/>}/>
 
-        <Route path='/about' element={<About/>}/>
+        <Route path='/edit-blog' element={<EditBlog/>}/>
+        <Route path='/edit-blog/:id' element={<AddBlog/>}/>
+
+
+        <Route path='/blogs' element={<Blog/>}/>
 
       </Routes>
      

@@ -1,11 +1,15 @@
 
 
 section .main__div{
-     background: url(../../images/sea.jpg);
-     background-attachment: fixed;
-     background-position: center;
-     background-size: cover;
+    
      z-index: 2;
+}
+
+
+section .parallax{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 section .modal__div{
@@ -16,3 +20,23 @@ section .modal__div{
     overflow: hidden;
     
 }
+
+
+section .icons{
+    position: fixed;
+    top: 40%;
+    right: 2%;
+}
+
+section .content{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+section .content h1{
+    font-size: 5rem;
+    font-weight: lighter;
+}
+
+

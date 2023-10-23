@@ -1,0 +1,86 @@
+
+.addblog{
+  width: 500px;
+  height: 600px;
+  justify-content: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto ;
+
+}
+
+
+
+
+.addblog-content{
+  width: 100%;
+  height: 100%;
+}
+
+
+.contact__form-div{
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    width: 500px;
+    height: 4rem;
+  }
+  
+  .contact__form-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+   background: none;
+   color: black;
+  outline: none;
+  padding: 1.5rem;
+  z-index: 0;
+  }
+
+  .contact__form-tag{
+    position: absolute;
+    top: -0.75rem;
+    left: 1.25rem;
+    font-size: small;
+    padding: 0 .25rem;
+    z-index: 10;
+    background-color: #ffffff;
+  }
+
+
+  .contact__form-area{
+    height: 11rem;
+  }
+  .contact__form-area{
+    resize: none;
+  }
+
+
+  .category-dropdown{
+    height: 40px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+
+
+  @media (max-width: 576px) {
+    .addblog{
+        width: 100%;
+    }
+
+    .contact-form{
+        width: 100%;
+        padding: 5px;
+    }
+    .contact__form-div{
+        width: 100%;
+    }
+
+  }
