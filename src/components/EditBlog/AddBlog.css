@@ -7,10 +7,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px auto ;
+  margin: 150px auto ;
 
 }
 
+.contact-form{
+  margin-top: 2rem;
+}
 
 
 
@@ -68,6 +71,17 @@
     border-radius: 5px;
   }
 
+
+ .buttons button{
+    background-color: rgb(2, 146, 134);
+    box-shadow: none;
+
+  }
+
+  .buttons button:hover{
+    background-color: rgb(4, 122, 112);
+
+  }
 
 
   @media (max-width: 576px) {

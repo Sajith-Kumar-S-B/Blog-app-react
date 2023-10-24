@@ -1,7 +1,7 @@
 import React from 'react'
 import './Badge.css'
 
-const Badge = ({ children }) =>
-    <p className='chip'>{children}</p>;
+const Badge = ({options}) =>
+  <p  className='chip'>{options?.category}</p>;
  
 export default Badge

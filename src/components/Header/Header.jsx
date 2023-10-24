@@ -15,11 +15,11 @@ function Header() {
       <Navbar.Toggle aria-controls="basic-navbar-nav"><MDBIcon fas icon="bars"  /></Navbar.Toggle>
       <Navbar.Collapse id="basic-navbar-nav">
       
-        <Nav className="ms-auto">
-        <Nav.Link  onClick={()=>navigate("/")} >Home</Nav.Link>
+        <Nav style={{width:'400px'}} className="nav ms-auto  d-flex justify-content-evenly align-items-center">
+         <Nav.Link  href='#home'  onClick={()=>navigate("/")} >Home</Nav.Link>
             <Nav.Link onClick={()=>navigate("/blogs")}>Blog</Nav.Link>
             <Nav.Link onClick={()=>navigate("/edit-blog")}>New Blog</Nav.Link>
-            <Nav.Link href="#pricing">Contact</Nav.Link>
+            <Nav.Link href='#footer'>Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>

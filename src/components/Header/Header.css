@@ -4,3 +4,25 @@
     z-index: 1000;
 }
 
+
+
+
+@media (max-width:992px){
+    .navbar .nav{
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+    }
+    
+}
+
+
+@media (max-width:778px){
+    .navbar .nav{
+        justify-content: center;
+        margin-right: auto;
+
+    }
+    
+}
+

@@ -9,7 +9,7 @@ function Home() {
 
     
 
-    <div style={{marginTop:'120px'}}>
+    <div className='home-compo'>
       <HomeContent/>
       <HomeBlog/>
      

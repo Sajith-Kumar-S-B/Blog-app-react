@@ -4,7 +4,7 @@ import { MDBIcon, MDBBtn } from 'mdb-react-ui-kit';
 
 function Footer() {
   return (
-    <div  style={{width:'100%',height:'450px'}} className='d-flex justify-content-evenly align-items-center flex-column bg-light text-dark z-1'>
+    <div  id='footer' style={{width:'100%',height:'450px'}} className='d-flex justify-content-evenly align-items-center flex-column bg-light text-dark z-1 '>
       <div  className='d-flex justify-content-evenly w-100 flex-wrap'>
         <div  className='d-flex flex-column justify-content-center align-items-center'>
            <h4><Link to={'/'} style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><MDBIcon className='me-2' fas icon="blog"  />

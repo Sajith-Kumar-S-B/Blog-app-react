@@ -11,7 +11,7 @@ import axios from 'axios';
 import { useNavigate, useParams } from 'react-router';
 
 
-const options = ["Travel","Fashion","Tech","Fitness","Sports","Food"]
+const options = ["Travel","Fashion","Tech","Fitness","Sports","Food","Movies"]
 
 const initialState = {title:'',description:'',image:'',category:''}
    
@@ -108,10 +108,7 @@ function AddBlog() {
         setBlog({title:'',description:'',image:'' ,category:''});
 
         
-        setTimeout(() => {
-          navigate("/");
-        }, 2000);
-
+        navigate('/blogs')
        
        
        
@@ -154,7 +151,7 @@ function AddBlog() {
      <div className='addblog-content'>
        
               <h1 className='text-center'>{editBlog?"Update Vlog" :"Add Blog"}</h1>
-           <Form className='contact-form' onSubmit={handleUpload}>
+           <Form className='contact-form ' onSubmit={handleUpload}>
          
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control className='mb-3' onChange={(e)=>setBlog({...blog,title:e.target.value})} type="text" value={title || ""} placeholder="Enter Video Caption" />
@@ -193,9 +190,9 @@ function AddBlog() {
            ))}
           </select>
 
-          <div className='d-flex justify-content-between mt-3'>
-             <Button type='submit'  variant="primary">{editBlog?"Update" :"Upload"}</Button>
-             <Button  onClick={()=>navigate("/")} variant="primary">Back to Home</Button>
+          <div className='buttons d-flex justify-content-between mt-3'>
+             <Button type='submit'  >{editBlog?"Update" :"Upload"}</Button>
+             <Button  onClick={()=>navigate("/")}>Back to Home</Button>
   
            </div>
       

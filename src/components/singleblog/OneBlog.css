@@ -40,6 +40,13 @@
     margin-top: 1.5rem;
   }
   
+
+
+  .related{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
   
   
   

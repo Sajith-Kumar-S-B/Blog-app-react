@@ -10,7 +10,7 @@ export const uploadBlog = async (body)=>{
 
 }
 
-// getting all videos
+// getting all blogs
 
 export const getAllBlogs = async ()=>{
   //    call get http request to http://localhost:4000/blogs to get blogs from json server return response to blog component 
@@ -45,3 +45,4 @@ export const getABlog = async (id)=>{
       return await commonApi('PUT',`${serverURL}/blogs/${id}`,body)
     
     }
+
