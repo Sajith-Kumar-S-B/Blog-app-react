@@ -150,7 +150,7 @@ function AddBlog() {
     <div className='addblog '>
      <div className='addblog-content'>
        
-              <h1 className='text-center'>{editBlog?"Update Vlog" :"Add Blog"}</h1>
+              <h1 className='text-center'>{editBlog?"Update Blog" :"Add Blog"}</h1>
            <Form className='contact-form ' onSubmit={handleUpload}>
          
         <Form.Group className="mb-3" controlId="formBasicEmail">

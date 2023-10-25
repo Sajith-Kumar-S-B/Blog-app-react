@@ -5,14 +5,14 @@ import './LatestBlog.css'
 
 function LatestBlog({title,id,image,category}) {
   return (
-    <div className='latest container d-flex justify-content-center align-items-center'>
+    <div className='latest container d-flex justify-content-center align-items-center data-aos="fade-up"'>
       
        <Link to={`/oneblog/${id}`}>
      
-          <Card  className='card' style={{width:'200px',height:'200px'}} >
+          <Card  className='card' style={{width:'200px',height:'250px'}} >
           
              
-              <Card.Img style={{width:'150px',height:'150px',borderRadius:'50%'}}  src={image} alt={title} />
+              <Card.Img style={{width:'170px',height:'170px',borderRadius:'50%'}}  src={image} alt={title} />
               
               
               <Card.Title className='latest-title mt-3'>

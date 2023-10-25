@@ -174,7 +174,7 @@ else{
 
 
   
-  <div   style={{marginTop:'30px'}} className='blogList-wrap'>
+  <div   style={{marginTop:'30px'}} className='blogList-wrap' data-aos="fade-up" >
        {allBlogs?.length>0?allBlogs.map((item,index)=>
         
           <div key={index} className='blogItem-wrap'>

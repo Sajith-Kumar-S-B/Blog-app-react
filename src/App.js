@@ -11,9 +11,15 @@ import AddBlog from './components/EditBlog/AddBlog';
 import NotFound from './components/NotFound/NotFound';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import Aos from 'aos';
+import "aos/dist/aos.css";
+import React from 'react';
 
 function App() {
+
+  React.useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <div className='app'>
   

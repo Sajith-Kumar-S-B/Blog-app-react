@@ -21,6 +21,18 @@
 }
 
 
+input{
+  outline: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+
+
+
+
 @media (max-width:992px) {
   .home-compo{
     margin-top: 0;

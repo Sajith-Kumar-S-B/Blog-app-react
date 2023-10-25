@@ -4,6 +4,7 @@
     grid-gap: 3rem;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
 
   }
 
@@ -92,9 +93,9 @@
 
 
 .edit i{
-  background-color: #6ca9e5;
+  background-color: #f8f8f8;
   padding: 10px 10px;
-  color: #fff;
+  color: #885c5c;
   border-radius: 5px;
   cursor: pointer;
 }

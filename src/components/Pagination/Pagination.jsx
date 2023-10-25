@@ -1,6 +1,7 @@
 import React from 'react'
 import { MDBPagination, MDBPaginationItem, MDBPaginationLink } from 'mdb-react-ui-kit';
 import { Button } from 'react-bootstrap';
+import './Pagination.css'
 
 function Pagination({currentPage,pageLimit,getAllUploadedBlogs,allBlogs,totalBlog}) {
 
@@ -21,7 +22,7 @@ function Pagination({currentPage,pageLimit,getAllUploadedBlogs,allBlogs,totalBlo
           </MDBPaginationItem>
           <MDBPaginationItem>
            
-              <Button className='btn' rounded onClick={()=>getAllUploadedBlogs(5,10,1)}>Next</Button>
+              <Button style={{backgroundColor:'green',boxShadow:'none',padding:'10px 10px'}} className='btn' rounded onClick={()=>getAllUploadedBlogs(5,10,1)}>Next</Button>
            
           </MDBPaginationItem>
 
@@ -35,7 +36,7 @@ function Pagination({currentPage,pageLimit,getAllUploadedBlogs,allBlogs,totalBlo
      
       <MDBPaginationItem>
         
-          <Button className='btn' rounded onClick={()=>getAllUploadedBlogs((currentPage-1)*5,currentPage * 5,-1)}>Prev</Button>
+          <Button style={{backgroundColor:'green',boxShadow:'none',padding:'10px 10px'}} className='btn' rounded onClick={()=>getAllUploadedBlogs((currentPage-1)*5,currentPage * 5,-1)}>Prev</Button>
         
       </MDBPaginationItem>
       <MDBPaginationItem>
@@ -45,7 +46,7 @@ function Pagination({currentPage,pageLimit,getAllUploadedBlogs,allBlogs,totalBlo
       </MDBPaginationItem>
       <MDBPaginationItem>
         
-        <Button className='btn' rounded onClick={()=>getAllUploadedBlogs((currentPage+1)*5,(currentPage + 2) * 5,1)}>Next</Button>
+        <Button className='btn' style={{backgroundColor:'green',boxShadow:'none',padding:'10px 10px'}} rounded onClick={()=>getAllUploadedBlogs((currentPage+1)*5,(currentPage + 2) * 5,1)}>Next</Button>
       
     </MDBPaginationItem>
 
@@ -59,7 +60,7 @@ function Pagination({currentPage,pageLimit,getAllUploadedBlogs,allBlogs,totalBlo
      
         <MDBPaginationItem>
           
-            <Button className='btn' rounded  onClick={()=>getAllUploadedBlogs((currentPage-1)*5,currentPage * 5,-1)}>Prev</Button>
+            <Button style={{backgroundColor:'green',boxShadow:'none',padding:'10px 10px'}} className='btn' rounded  onClick={()=>getAllUploadedBlogs((currentPage-1)*5,currentPage * 5,-1)}>Prev</Button>
           
         </MDBPaginationItem>
         <MDBPaginationItem>

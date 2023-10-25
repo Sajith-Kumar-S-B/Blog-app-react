@@ -1,1 +1,1 @@
-export const serverURL = 'https://blogit-json-server.onrender.com/blogs'
+export const serverURL = 'https://blogit-json-server.onrender.com'

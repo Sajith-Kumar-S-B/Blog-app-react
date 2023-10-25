@@ -71,7 +71,7 @@ function OneBlog() {
 
           {relatedPost.filter((item)=>item.id != id).map((item,index)=>(
              <Col key={index}>
-             <Card className='mt-5 mb-5'  style={{width:'250px',height:'300px'}} >
+             <Card className='mt-5 mb-5'  style={{width:'250px',height:'320px'}} >
 
               <Link style={{width:'100%',height:'100%'}} to={`/oneblog/${item?.id}`}>
 
@@ -79,9 +79,9 @@ function OneBlog() {
  
               </Link>
               <Card.Body>
-      <Card.Title className='d-flex justify-content-center align-items-center flex-column'>
-        <h6>{item?.title}</h6>
-        <h6>{item?.description.slice(0,55)}...</h6>
+      <Card.Title className='title-card d-flex justify-content-center align-items-center flex-column'>
+        <p>{item?.title}</p>
+        <h6 style={{fontSize:'12px'}} >{item?.description.slice(0,55)}...</h6>
 
       
         </Card.Title>

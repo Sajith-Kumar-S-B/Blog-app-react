@@ -26,10 +26,28 @@ section{
     color: #000;
 }
 
+.blog_description .home-desc{
+    font-size: 14px;
+}
+
+
 .blog_description:hover{
-    color: rgb(2, 146, 134);
+    color: #029286;
 
 }
+
+
+.blog_description .views{
+    display: flex;
+    justify-content: center;
+    gap: .2rem;
+    align-items: center;
+}
+
+.blog_description .views i{
+   font-size: small;
+}
+
 
 .blog_img{
     width: 270px;
@@ -41,7 +59,7 @@ section{
 
 .chip{
     font-size: 0.7rem;
-    background: linear-gradient(to right, #edc4a4, #f4a95d);
+    background: linear-gradient(to right, #f6ad76, #32b2a3);
     color: #fff;
     padding: 0.3rem 0.5rem;
     border-radius: 5px;
@@ -66,9 +84,17 @@ section{
 
   .showBtn button{
 
-    background-color: rgb(2, 146, 134);
+    background-color: rgb(4, 134, 123);
     color: #fff;
     font-weight: 600;
+
+  }
+
+
+  .showBtn button:hover{
+
+    background-color: rgb(4, 108, 100);
+   
 
   }
 
@@ -113,9 +139,11 @@ section{
         overflow: hidden;
     }
     .blog_description p{
-        font-size: small;
+        font-size:small;
     }
 
+   
+    
     .blog_content{
         flex-direction: column;
     }

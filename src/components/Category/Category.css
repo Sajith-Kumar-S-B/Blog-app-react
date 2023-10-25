@@ -10,13 +10,16 @@
 }
 
 .category_item .item{
-    background: linear-gradient(to right, #6898eb, #a7bfe8);
+    background: linear-gradient(to right, #37978f, #acdcd3);
    color: #ffffff;
     padding: .2rem 1rem;
     border-radius: 10px;
     cursor: pointer;
+
     
 }
+
+
 
 
 

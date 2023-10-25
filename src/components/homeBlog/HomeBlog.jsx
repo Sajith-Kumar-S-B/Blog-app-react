@@ -44,7 +44,7 @@ function HomeBlog({id}) {
   },[])
 
   return (
-    <section style={{width:'100%',height:'auto'}}>
+    <section style={{width:'100%',height:'auto'}} data-aos="fade-up" >
       <div>
         <div className='d-flex justify-content-center align-items-center flex-column'>
          <h1>Recent Posts</h1>
@@ -56,20 +56,20 @@ function HomeBlog({id}) {
         { data?.length>0?data.map((item,index)=>
         <div key={index} className='d-flex justify-content-center align-items-center flex-column'>
         <Link className='recent' to={`/oneblog/${item?.id}`}>
-           <div className='blog_one'>
+           <div className='blog_one ' data-aos="fade-up">
              <div className='blog_content d-flex justify-content-between'>
              <div className='blog_img'> <img width={'100%'} height={'100%'} src={item?.image} alt="" />
              </div>
-              <div className='blog_description d-flex justify-content-center flex-column'>
-                <div>
+              <div className='blog_description d-flex justify-content-between  flex-column'>
+                <div className='d-flex justify-content-between flex-column '>
                   <h2>{item?.title}</h2>
-                  <p>{excerpt(item?.description)}
+                  <p className='home-desc'>{excerpt(item?.description)}
                   <Link className='read' to={`/oneblog/${item?.id}`}>Read More</Link></p>
                   <hr />
                 </div>
                 <div className='d-flex justify-content-between'>
                   <p className='chip'>{item?.category}</p>
-                   <p>144 views</p>
+                   <div className='views'>144<i className="fa-regular fa-eye"></i></div>
                    <div><i className='fa-regular fa-heart'></i></div>
                 </div>
               </div>

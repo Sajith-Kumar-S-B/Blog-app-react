@@ -38,6 +38,8 @@
   .blog-desc {
     padding: 1rem;
     margin-top: 1.5rem;
+    text-align: center justify;
+    margin-bottom: 5rem;
   }
   
 
@@ -48,5 +50,10 @@
     text-align: center;
   }
   
+
+
+  .title-card h6{
+    text-align: center justify;
+  }
   
   
