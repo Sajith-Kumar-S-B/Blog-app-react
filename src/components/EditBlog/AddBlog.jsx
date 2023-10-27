@@ -11,7 +11,7 @@ import axios from 'axios';
 import { useNavigate, useParams } from 'react-router';
 
 
-const options = ["Travel","Fashion","Tech","Fitness","Sports","Food","Movies"]
+const options = ["Travel","Fashion","Technology","Fitness","Sports","Food","Movies"]
 
 const initialState = {title:'',description:'',image:'',category:''}
    

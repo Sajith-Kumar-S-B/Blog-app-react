@@ -2,11 +2,13 @@
 
 .category{
     margin-top: 20px;
+    
 }
 
 .category_item{
     padding: .5rem;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .category_item .item{
@@ -27,11 +29,13 @@
 
 @media (max-width:778px){
     .category_item .item{
-        padding: .2rem .3rem;
+        padding: .3rem .5rem;
         font-size: 12px;
     }
     .category_item{
         gap: .5rem;
+        padding: 2rem;
+       
 
     }
 }

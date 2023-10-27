@@ -13,15 +13,14 @@ function HomeContent() {
   return (
    <section id='home' style={{width:'100%',height:'100vh'}}>
    <Parallax style={{width:'100%',height:'100%'}} strength={500} className='parallax w-100' bgImage={sea2Image}>
-      <div className='main__div' style={{width:'100%',height:'100%'}} >
-      <div className='home-first d-flex justify-content-between align-items-center'>
+      <div className='home-first'>
   <div className='content'>
    <div className='content-text'>
       <h1>Words That <br /> Inspire, <br />
-       Stoies <br />That Connect</h1>
+       Stories <br />That Connect</h1>
        <h5>The blog of here and now</h5>
    </div>
-   <div className='subscribe d-flex flex-column'>
+   <div className='subscribe d-flex flex-column justify-content-center align-items-start '>
     <br />
    <p>Subscribe to our Newsletter for latest Posts</p>
 
@@ -38,7 +37,7 @@ function HomeContent() {
   </div>
  
   
-      <div style={{width:'20px',height:'150px'}} className='icons fs-5 d-flex justify-content-between'>
+      <div style={{width:'20px',height:'150px'}} className='icons fs-5 d-flex justify-content-between align-items-center'>
       <Link className='text-dark' to={'https://getbootstrap.com/'} style={{textDecoration:'none'}}><i class="fa-brands fa-facebook"></i></Link>
       <Link className='text-dark' to={'https://getbootstrap.com/'} style={{textDecoration:'none'}}><i class="fa-brands fa-twitter"></i></Link>
       <Link className='text-dark' to={'https://getbootstrap.com/'} style={{textDecoration:'none'}}><i class="fa-brands fa-instagram"></i></Link>
@@ -47,12 +46,11 @@ function HomeContent() {
 
       </div>
       
-</div>
 
        
   </div>
    </Parallax>
-   <div style={{width:'600px',height:'800px'}} className='modal__div bg-light'>
+   <div style={{width:'600px',height:'800px'}} className='modals__div'>
   <Carousel className='carousel' style={{width:'100%',height:'100%'}}>
         <Carousel.Item >
            <img width={'100%'} height={'100%'} src={carouselFashion} alt="" />

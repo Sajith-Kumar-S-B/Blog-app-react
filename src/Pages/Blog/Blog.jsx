@@ -21,7 +21,7 @@ function Blog({title,category,id,description,image}) {
   const[totalBlog,setTotalBlog] = useState(null)
 
 
-  const options = ["Travel","Fashion","Tech","Fitness","Sports","Food","Movies"]
+  const options = ["Travel","Fashion","Technology","Fitness","Sports","Food","Movies"]
 
   
   const [allBlogs,setAllBlogs] = useState([])
@@ -174,7 +174,7 @@ else{
 
 
   
-  <div   style={{marginTop:'30px'}} className='blogList-wrap' data-aos="fade-up" >
+  <div   className='blogList-wrap' data-aos="fade-up" >
        {allBlogs?.length>0?allBlogs.map((item,index)=>
         
           <div key={index} className='blogItem-wrap'>

@@ -44,7 +44,7 @@ function HomeBlog({id}) {
   },[])
 
   return (
-    <section style={{width:'100%',height:'auto'}} data-aos="fade-up" >
+    <section className='home_blog' style={{width:'100%',height:'auto'}} data-aos="fade-up" >
       <div>
         <div className='d-flex justify-content-center align-items-center flex-column'>
          <h1>Recent Posts</h1>
